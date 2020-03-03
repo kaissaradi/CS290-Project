@@ -1,0 +1,101 @@
+body {
+    position: relative;
+    min-height: 100vh;
+    overflow-y: scroll;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(202, 202, 202);
+    padding: 0px;
+    text-align: center;
+}
+
+header {
+    text-align: left;
+}
+
+h6 {
+    text-align: left;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(95, 103, 110);
+}
+
+small {
+    float: right;
+}
+
+.main {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding-bottom: 20px;
+}
+
+.u-list {
+    list-style: none;
+    background-blend-mode: multiply;
+    background-color: rgba(255, 140, 0, 0.637);
+    padding: 10px;
+}
+
+.row {
+    padding: 20px;
+}
+
+.col-4 {
+    position: relative;
+    height: 400px;
+    overflow-y: scroll;
+    float: left;
+}
+
+.col-8 {
+    position: relative;
+    height: 400px;
+    overflow-y: scroll;
+    float: right;
+}
+
+nav {
+    width: 100%;
+    padding: 10px;
+}
+
+article img {
+    float: right;
+    height: 100px;
+    width: 100px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    border: 35px solid darkorange;
+    background-color: darkorange;
+}
+
+#carousel-animation {
+    width: 50%;
+    left: 25%;
+    border-style: solid;
+    border-color: rgba(21, 43, 43, 0.349);
+}
+
+.list-group a {
+    border: 0 none;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-content: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    width: 100%;
+    opacity: 90%;
+    display: inline-block;
+}
