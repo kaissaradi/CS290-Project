@@ -5,15 +5,12 @@ function bindButtons() {
     document.getElementById('submitWeather').addEventListener('click', function(event) {
         var req = new XMLHttpRequest();
         var zip = document.getElementById("weather-form").value;
-        var countrycode = "us";
-        var payload = "http://api.openweathermap.org/data/2.5/weather?zip=" + zip + "," + countrycode + apiKey;
-        req.open("GET", payload, true);
+        var payload = "https://api.weather.gov/stations/TIM59/observations/latest";
+        req.open("GET", payload, false);
         req.addEventListener('load', function() {
             if (req.status >= 200 && req.status < 400) {
                 var response = JSON.parse(req.responseText);
-                document.getElementById("currCity").textContent = response.name;
-                document.getElementById("temp").textContent = response.main.temp;
-                document.getElementById("hum").textContent = response.main.humidity;
+                document.getElementById("temp").textContent = response.properties.temperature.value + " C";
             } else {
                 document.getElementById("currCity").textContent = "Error!";
                 document.getElementById("temp").textContent = "Error!";
