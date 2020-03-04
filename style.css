@@ -35,7 +35,7 @@ small {
 }
 
 .main {
-    overflow-y: hidden;
+    overflow-y: scroll;
     overflow-x: hidden;
     padding-bottom: 20px;
     background-color: rgb(145, 145, 145);
@@ -145,4 +145,15 @@ h4{
     padding: 0px;
     background-color: rgba(255, 140, 0, 0.589);
 
+}
+
+#weather-widget{
+    text-align: right;
+}
+
+.new-snow{
+    float: left;
+}
+.conditions{
+    float: right;
 }

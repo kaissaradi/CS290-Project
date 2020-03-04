@@ -44,16 +44,25 @@
                     <input type="submit" name="submit" id="submitWeather">
                 </fieldset>
             </form>
-            <div class="col-8">
-                <h2>Your City's Current Weather:</h2>
-                <ul>
-                    <li><span>City:</span><span id="currCity"></span></li>
-                    <li><span>Temperature:</span><span id="temp"></span></li>
-                    <li><span>Humidity:</span><span id="hum"></span></li>
-                </ul>
-            </div>
+                <div class="col-8" id="weather-widget">
+                    <div class="conditions">
+                        <h3>Current Conditions</h3>
+                        <div id="temp"></div>
+                        <div id="desc"></div>
+                        <div id="wind"></div>
+                    </div>
+                    <div class="new-snow">
+                        <h5>New Snow</h5>
+                        <small>last 3 hours</small>
+                        <br>
+                        <div id="snow"></div>
+                    </div>
+                </div>
         </div>
-        
+        <article>
+            <embed src="images/meadows-trails.pdf" type="application/pdf" width="100%" height="600px" />
+            <embed src="images/trail-map-timb.pdf" type="application/pdf" width="100%" height="600px" />
+        </article>
     </div>
     <footer>
         Kais Saradi 2020
