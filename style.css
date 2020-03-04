@@ -4,20 +4,30 @@ body {
     overflow-y: scroll;
     max-width: 100%;
     overflow-x: hidden;
-    background-color: rgb(202, 202, 202);
+    background-color:rgb(31, 35, 37);
     padding: 0px;
     text-align: center;
+}
+.hikes{
+    position: relative;
+}
+p{
+    text-align: left;
 }
 
 header {
     text-align: left;
+    color: darkorange;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
+blockquote{
+    font-style: italic;
+    text-align: center;
+}
 h6 {
     text-align: left;
     font-weight: bold;
-    font-style: italic;
-    color: rgb(95, 103, 110);
+    color: rgb(37, 37, 37);
 }
 
 small {
@@ -28,24 +38,45 @@ small {
     overflow-y: hidden;
     overflow-x: hidden;
     padding-bottom: 20px;
+    background-color: rgb(145, 145, 145);
 }
 
 .u-list {
     list-style: none;
-    background-blend-mode: multiply;
-    background-color: rgba(255, 140, 0, 0.637);
+    background-color: darkorange;
     padding: 10px;
 }
 
+
 .row {
-    padding: 20px;
+    padding: 0%;
+    height: 200px;
 }
 
-.col-4 {
+#scroll-side{
     position: relative;
     height: 400px;
     overflow-y: scroll;
     float: left;
+    padding: 0px;
+    background-color: rgba(255, 140, 0);
+
+}
+
+#image-row{
+    height: auto;
+    background-color: rgba(139, 139, 139, 0.199);
+    bottom: 0px;
+    display: inline-block;
+    padding: 15px;
+    border: none;
+}
+#image-row img{
+    height: 200px;
+}
+
+.flex-nowrap{
+    height: auto;
 }
 
 .col-8 {
@@ -58,6 +89,10 @@ small {
 nav {
     width: 100%;
     padding: 10px;
+}
+article{
+    background-color: rgb(153, 153, 153);
+    padding:20px;
 }
 
 article img {
@@ -82,8 +117,10 @@ footer {
     border-color: rgba(21, 43, 43, 0.349);
 }
 
-.list-group a {
+.list-group-item-dark{
     border: 0 none;
+    background-color: rgba(255, 140, 0, 0);
+
 }
 
 .carousel-inner {
@@ -98,4 +135,14 @@ footer {
     width: 100%;
     opacity: 90%;
     display: inline-block;
+}
+
+h4{
+    text-align: left;
+}
+
+.scrollbox{
+    padding: 0px;
+    background-color: rgba(255, 140, 0, 0.589);
+
 }
