@@ -1,5 +1,5 @@
 # For Grader
-Trails page has a scrollbox which allows the user to scroll through different hikes
+Trails page has a scrollbox which allows the user to scroll through different hikes.
 Form on snow report page submits via get to the NWS api to return current conditions.
 Fishing page has unordered list of articles.
  Snow report page has two pictures of the trail map, which are downloadable and open to a pdf in a new tab.
