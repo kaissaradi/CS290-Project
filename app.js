@@ -1,23 +1,29 @@
-var apiKey = "&appid=d1b0620438316662aec4d0a6b1ce8f39";
-document.addEventListener('DOMContentLoaded', bindButtons);
+var express = require('express');
 
-function bindButtons() {
-    document.getElementById('submitWeather').addEventListener('click', function(event) {
-        var req = new XMLHttpRequest();
-        var zip = document.getElementById("weather-form").value;
-        var payload = "https://api.weather.gov/stations/TIM59/observations/latest";
-        req.open("GET", payload, false);
-        req.addEventListener('load', function() {
-            if (req.status >= 200 && req.status < 400) {
-                var response = JSON.parse(req.responseText);
-                document.getElementById("temp").textContent = response.properties.temperature.value + " C";
-            } else {
-                document.getElementById("currCity").textContent = "Error!";
-                document.getElementById("temp").textContent = "Error!";
-                document.getElementById("hum").textContent = "Error!";
-            }
-        });
-        req.send();
-        event.preventDefault();
-    })
-}
+var app = express();
+
+var bodyParser = require('body-parser');
+
+app.set('port', 19952);
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+app.get('/', function(req, res) {
+    res.sendFile('index.html')
+});
+
+app.use(function(req, res) {
+    res.status(404);
+    res.render('404');
+});
+
+app.use(function(err, req, res, next) {
+    console.error(err.stack);
+    res.type('plain/text');
+    res.status(500);
+    res.render('500');
+});
+
+app.listen(app.get('port'), function() {
+    console.log('Express started on http://localhost:' + app.get('port') + '; press Ctrl-C to terminate.');
+});
