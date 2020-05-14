@@ -35,6 +35,8 @@ small {
 }
 
 .main {
+    overflow-y: hidden;
+    overflow-x: hidden;
     padding-bottom: 20px;
     background-color: rgb(145, 145, 145);
 }
