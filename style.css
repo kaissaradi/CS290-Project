@@ -112,7 +112,7 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    border: 35px solid darkorange;
+    border-top: 10px solid darkorange;
     background-color: darkorange;
 }
 
