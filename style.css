@@ -109,9 +109,10 @@ article img {
 }
 
 footer {
-    position: relative;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    bottom: 0px;
     text-align: center;
     border: 35px solid darkorange;
     background-color: darkorange;
