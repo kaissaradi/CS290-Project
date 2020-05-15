@@ -9,30 +9,27 @@
         sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
-
 <body>
-    <header>
-        <h1>Mt Hood Resources</h1>
-        <nav class="navbar navbar-expand navbar-light bg-dark">
-            <div class="collapse navbar-collapse" id="nav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="trails.html">Trails</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="snow.html">Snow</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="fishing.html">Fishing</a>
-                    </li>
-                </ul>
-            </div>
+    <header class="navbar navbar-expand navbar-light bg-dark">
+        <nav class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trails.html">Trails</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="snow.html">Snow</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="fishing.html">Fishing</a>
+                </li>
+            </ul>
         </nav>
+        <h4 class="float-right">Wy'East Resource Center</h4>
     </header>
-    <div class="main">
+    <div class="container-fluid">
         <div id="carousel-animation" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -60,13 +57,13 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div class="row">
-            <div class="col-2">
+        <div class="container-fluid" id="main">
+            <div class="col-2 float-left">
                 <h4>Page Info</h4>
                 <p> This page was created as a resource hub for its owner. After getting tired of constantly checking the same few websites for information before heading up to the mountain, I decided it would be most useful for me to use this project to
                     create one centeral webpage where I can find the information i need at any given time. </p>
             </div>
-            <div class="col-10">
+            <div class="col-10 float-right">
                 <h4>History and Background</h4>
                 <p>From Wikipedia:</p>
                 <blockquote cite="https://en.wikipedia.org/wiki/Mount_Hood">Mount Hood, called Wy'east by the Multnomah tribe, is a potentially active stratovolcano in the Cascade Volcanic Arc. It was formed by a subduction zone on the Pacific coast and rests in the Pacific Northwest region of the United States.
@@ -86,7 +83,7 @@
             </div>
         </div>
     </div>
-    <footer>
+    <footer class="navbar">
         Kais Saradi 2020
         <br>
         <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/ ">Source [0]</a>
